@@ -7,11 +7,10 @@ public class Digits
 
 	public Digits(int num)
 	{ /* to be implemented in part (a) */ 
-		dL = new ArrayList <Integer>();
-		String str=""+num;
+		dL = new ArrayList<Integer>();
+		String str = "" + num;
 		for (int i=0;i<str.length();i++)
 			dL.add(str.charAt(i)-'0');
-	
 	}
 
 	public boolean isStrictlyIncreasing()
@@ -23,6 +22,6 @@ public class Digits
 	
 	public String toString()
 	{
-		return digitList.toString();
+		return dL.toString();
 	}
 }
